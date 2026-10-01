@@ -12,13 +12,13 @@ const imageWorks = [
 ]
 
 const videoWorks = [
-  { id: 'vid-01', num: '01', title: { zh: '流动之境', en: 'Flowing Realm' }, category: { zh: '漫剧视觉', en: 'Comic Drama' }, year: '2026', duration: '', poster: '', src: 'videos/work-vid-1.mp4' },
-  { id: 'vid-02', num: '02', title: { zh: '梦境碎片', en: 'Dream Fragments' }, category: { zh: '漫剧视觉', en: 'Comic Drama' }, year: '2026', duration: '', poster: '', src: 'videos/work-vid-2.mp4' },
-  { id: 'vid-03', num: '03', title: { zh: '数字生灵', en: 'Digital Being' }, category: { zh: '产品宣传视觉', en: 'Product Promo' }, year: '2026', duration: '', poster: '', src: 'videos/work-vid-3.mp4' },
-  { id: 'vid-04', num: '04', title: { zh: '光影序列', en: 'Light Sequence' }, category: { zh: '产品宣传视觉', en: 'Product Promo' }, year: '2026', duration: '', poster: '', src: 'videos/work-vid-4.mp4' },
-  { id: 'vid-05', num: '05', title: { zh: '未来回响', en: 'Future Echo' }, category: { zh: '产品宣传视觉', en: 'Product Promo' }, year: '2026', duration: '', poster: '', src: 'videos/work-vid-5.mp4' },
-  { id: 'vid-06', num: '06', title: { zh: '科技之光', en: 'Tech Glow' }, category: { zh: '产品宣传视觉', en: 'Product Promo' }, year: '2026', duration: '', poster: '', src: 'videos/work-vid-6.mp4' },
-  { id: 'vid-07', num: '07', title: { zh: '质感呈现', en: 'Premium Showcase' }, category: { zh: '产品宣传视觉', en: 'Product Promo' }, year: '2026', duration: '', poster: '', src: 'videos/work-vid-7.mp4' },
+  { id: 'vid-01', num: '01', title: { zh: '流动之境', en: 'Flowing Realm' }, category: { zh: '漫剧视觉', en: 'Comic Drama' }, year: '2026', duration: '', poster: '', src: 'work-vid-1.mp4' },
+  { id: 'vid-02', num: '02', title: { zh: '梦境碎片', en: 'Dream Fragments' }, category: { zh: '漫剧视觉', en: 'Comic Drama' }, year: '2026', duration: '', poster: '', src: 'work-vid-2.mp4' },
+  { id: 'vid-03', num: '03', title: { zh: '数字生灵', en: 'Digital Being' }, category: { zh: '产品宣传视觉', en: 'Product Promo' }, year: '2026', duration: '', poster: '', src: 'work-vid-3.mp4' },
+  { id: 'vid-04', num: '04', title: { zh: '光影序列', en: 'Light Sequence' }, category: { zh: '产品宣传视觉', en: 'Product Promo' }, year: '2026', duration: '', poster: '', src: 'work-vid-4.mp4' },
+  { id: 'vid-05', num: '05', title: { zh: '未来回响', en: 'Future Echo' }, category: { zh: '产品宣传视觉', en: 'Product Promo' }, year: '2026', duration: '', poster: '', src: 'work-vid-5.mp4' },
+  { id: 'vid-06', num: '06', title: { zh: '科技之光', en: 'Tech Glow' }, category: { zh: '产品宣传视觉', en: 'Product Promo' }, year: '2026', duration: '', poster: '', src: 'work-vid-6.mp4' },
+  { id: 'vid-07', num: '07', title: { zh: '质感呈现', en: 'Premium Showcase' }, category: { zh: '产品宣传视觉', en: 'Product Promo' }, year: '2026', duration: '', poster: '', src: 'work-vid-7.mp4' },
 ]
 
 const codeWorks = [
@@ -523,7 +523,7 @@ function Home() {
       {/* 隐藏视频源：只用于提供帧数据（须保持真实渲染，屏幕外定位；不能 display:none 或过小） */}
       <video
         ref={videoRef}
-        src="videos/eye.mp4"
+        src="eye.mp4"
         muted
         autoPlay
         loop
@@ -1080,7 +1080,7 @@ function Works() {
     <>
     <div className="fixed inset-0 w-full h-full overflow-hidden" style={{ zIndex: -1 }}>
       <video
-        src="videos/works-bg.mp4"
+        src="works-bg.mp4"
         autoPlay
         loop
         muted
@@ -1391,7 +1391,7 @@ function Resources() {
     <>
     <div className="fixed inset-0 w-full h-full overflow-hidden" style={{ zIndex: -1 }}>
       <video
-        src="videos/resources-bg.mp4"
+        src="resources-bg.mp4"
         autoPlay
         loop
         muted
@@ -1534,7 +1534,7 @@ function Contact() {
     {/* 视频背景 — 放在 PageWrap 外避免 transform 限制 fixed */}
     <div className="fixed inset-0 w-full h-full overflow-hidden" style={{ zIndex: -1 }}>
       <video
-        src="videos/contact-bg.mp4"
+        src="contact-bg.mp4"
         autoPlay
         loop
         muted
